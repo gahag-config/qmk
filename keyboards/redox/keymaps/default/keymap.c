@@ -27,6 +27,10 @@ enum layers {
 #define CTL_W  LCTL(KC_W)
 
 #define CTRL_RET MT(MOD_RCTL, KC_ENT)
+#define HC(k) MT(MOD_RCTL, k)
+#define HA(k) MT(MOD_LALT, k)
+#define HS(k) MT(MOD_LSFT, k)
+#define HG(k) MT(MOD_LGUI, k)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT(
@@ -85,3 +89,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   )
 };
+
+const char chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM =
+  LAYOUT(
+    'L', 'L', 'L', 'L', 'L', 'L',                        'R', 'R', 'R', 'R', 'R', 'R',
+    'L', 'L', 'L', 'L', 'L', 'L', 'L',              'R', 'R', 'R', 'R', 'R', 'R', 'R',
+    'L', 'L', 'L', 'L', 'L', 'L', 'L',              'R', 'R', 'R', 'R', 'R', 'R', 'R',
+    'L', 'L', 'L', 'L', 'L', 'L', '*', '*',    '*', '*', 'R', 'R', 'R', 'R', 'R', 'R',
+    'L', 'L', 'L', 'L',   '*',    '*', '*',    '*', '*',   '*',    'R', 'R', 'R', 'R'
+  );
