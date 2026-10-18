@@ -32,3 +32,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
+
+/* Select hand configuration */
+#define MASTER_LEFT
+// #define MASTER_RIGHT
+// #define EE_HANDS
+
+#define MOUSEKEY_DELAY 0 // Delay between pressing a movement key and cursor movement
+#define MOUSEKEY_INTERVAL 16 // Time between cursor movements
+#define MOUSEKEY_MAX_SPEED 3 // Maximum cursor speed at which acceleration stops
+#define MOUSEKEY_TIME_TO_MAX 50 // Time until maximum cursor speed is reached
+#define MOUSEKEY_WHEEL_DELAY 0 // Delay between pressing a wheel key and wheel movement
+#define MOUSEKEY_WHEEL_INTERVAL 50 // Time between wheel movements
+#define MOUSEKEY_WHEEL_MAX_SPEED 50 // Maximum number of scroll steps per scroll action
+#define MOUSEKEY_WHEEL_TIME_TO_MAX 255 // Time until maximum scroll speed is reached
+
+#define TAPPING_TERM 0
+// #define PERMISSIVE_HOLD  // Triggers mod if you tap another key while holding.
+// #define CHORDAL_HOLD     // Constrains holds to opposite-hand combinations.
+
