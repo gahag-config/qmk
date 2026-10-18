@@ -29,7 +29,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MOUSEKEY_WHEEL_TIME_TO_MAX 255 // Time until maximum scroll speed is reached
 
 #define TAPPING_TERM 0
-#define RETRO_TAPPING
+// #define RETRO_TAPPING
 // #define PERMISSIVE_HOLD  // Triggers mod if you tap another key while holding.
 // #define CHORDAL_HOLD     // Constrains holds to opposite-hand combinations.
 
